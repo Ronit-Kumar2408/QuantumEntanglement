@@ -6,15 +6,14 @@ import sys
 def dramatic_loading_screen():
     print("\n[INITIATING QUANTUM PROCESSOR...]")
     loading_messages = [
-        "Synthesizing quantum superposition states...",
-        "Applying Hadamard and CNOT gates...",
-        "Collapsing wave functions across 1,000 trials...",
-        "Finalizing statistical correlation matrix..."
+        "⏳ Synthesizing quantum superposition states...",
+        "⏳ Applying Hadamard and CNOT gates...",
+        "⏳ Collapsing wave functions across 1,000 trials...",
+        "⏳ Finalizing statistical correlation matrix..."
     ]
     
     for message in loading_messages:
-        sys.stdout.write(f"  ⏳ {message}\r")
-        sys.stdout.flush()
+        print(message)
         time.sleep(0.9)  # Pauses for ~0.9 seconds per message (Total ~3.6 seconds)
     print("  ✅ Processing complete!\n")
 
